@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+// check the type of props 
 import PropTypes from 'prop-types'
 
 class Counter extends Component {
@@ -8,12 +9,13 @@ class Counter extends Component {
     this.incrementIfOdd = this.incrementIfOdd.bind(this);
   }
 
+  // if it is a odd number, add one soonly
   incrementIfOdd() {
     if (this.props.value % 2 !== 0) {
       this.props.onIncrement()
     }
   }
-
+// if it is a odd number, add one after one second
   incrementAsync() {
     setTimeout(this.props.onIncrement, 1000)
   }
