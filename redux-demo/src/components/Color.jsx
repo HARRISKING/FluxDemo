@@ -22,7 +22,6 @@ class Couter extends Component {
                     <button onClick={turnYellow}>黄色</button>
                     <button onClick={turnRed}>红色</button>
                 </div>
-
             </div>
         )
     }
