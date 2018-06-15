@@ -9,4 +9,4 @@ export default (state = 'pink', action) => {
         default:
             return state
     }
-}
+}  
